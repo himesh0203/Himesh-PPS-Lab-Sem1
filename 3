@@ -1,1 +1,23 @@
+#include <stdio.h>
 
+int main() 
+{
+int rows, coef = 1;
+printf("Input number of rows: ");
+scanf("%d", &rows);
+ for (int i = 0; i < rows; i++) 
+ {
+  for (int space = 0; space < rows - i - 1; space++)
+  {
+    printf("  ");
+  }
+ coef = 1; 
+        for (int j = 0; j <= i; j++)
+   {
+      printf("%4d", coef); // Print coefficient with padding
+       coef = coef * (i - j) / (j + 1); // Calculate the next coefficient
+   }
+    printf("\n");
+   }
+    return 0;
+}
