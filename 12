@@ -1,1 +1,31 @@
+Write a C program to calculate the factorial of a given number. 
+Test Data : Input the number : 5 Expected Output : The Factorial of 5 is: 120
 
+
+
+
+
+
+
+
+#include <stdio.h>
+
+int main() 
+{
+   int number;
+  long long factorial = 1;
+  printf("Input the number: ");
+  scanf("%d", &number);
+  if (number < 0) 
+{
+    printf("Factorial is not defined for negative numbers.\n");
+ } else 
+{
+    for (int i = 1; i <= number; i++) 
+{
+    factorial *= i; 
+ }
+   printf("The Factorial of %d is: %lld\n", number, factorial);
+ }
+    return 0;
+}
