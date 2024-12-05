@@ -14,7 +14,7 @@ int main()
     long long binaryNumber;
     int decimalNumber = 0, base = 1, lastDigit;
     printf("Input a binary number: ");
-    scanf("%lld", &binaryNumber);
+    scanf("%d", &binaryNumber);
     long long originalBinaryNumber = binaryNumber;
     for (int i = 0; binaryNumber > 0; i++) 
 {
@@ -23,7 +23,7 @@ int main()
     binaryNumber /= 10;
     base *= 2; 
 }
-    printf("The Binary Number : %lld\n", originalBinaryNumber);
+    printf("The Binary Number : %d\n", originalBinaryNumber);
     printf("The equivalent Decimal Number : %d\n", decimalNumber);
     return 0;
 }
