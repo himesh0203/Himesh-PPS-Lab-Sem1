@@ -1,0 +1,37 @@
+Write c program to find whether a given year is a leap year or not
+
+
+
+
+
+#include<stdio.h>
+#include<conio.h>
+void main ()
+{
+int a:
+printf("Enter the no. of days in that respective year");
+scanf("%d",&a);
+if (a==365)
+{
+printf("Not a leap year");
+]
+else if (a>365)
+{
+printf("It is a leap year");
+}
+else
+{
+printf("ERROR");
+}
+}
+
+
+
+
+
+
+
+
+
+
+
